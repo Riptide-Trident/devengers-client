@@ -1,41 +1,160 @@
-# Online Retail Dashboard using React, FusionCharts, Google Sheets & Boostrap
+# Crystal React Bootstrap Dashboard
 
-[**Blog Link**](https://scotch.io/tutorials/building-an-online-retail-dashboard-in-react)
+![Crystal Dashboard](https://user-images.githubusercontent.com/1154740/31934597-c2b055dc-b8d6-11e7-869d-48e6f8992718.png)
 
-**Steps to run the project**:
-1. After cloning the repository, use `npm install` to install all the dependencies needed.
-2. Run `npm start` to run project in development server. (Refer to more scripts mentioned below)
+Crystal React Bootstrap Dashboard is a beautiful, multi-purpose admin dashboard which is with React, Redux & Bootstrap. It contains a lot of simple and easy to use React components. You can use this dashboard to build many kind of dashboard include health, employees, company dashboard.
 
-If you have any more questions, raise an [issue](https://github.com/sikrigagan/saas-dashboard-gsheetsapi-react/issues) or yell at [me on Twitter](https://twitter.com/sikrigagan).
+This package includes:
+- Charts
+- Buttons
+- Notifications
+- Sweet Alert
+- Redux Form
+- AirBnB React Dates
+- Google Map
+- Uber Vector Map
+- React Bootstrap Table
+- React Big Calendar
 
----
+In order to keep our stylesheet easy to maintain and customize by everyone. Stylesheet is writen by SCSS.
 
-## Available Scripts
+**[Live preview](https://jslancerteam.github.io/crystal-dashboard/#/)**
 
-In the project directory, you can run:
+## Get started
+*Development*
+```
+git clone https://github.com/jslancerteam/crystal-dashboard
+npm install
+npm start
+```
 
-### `npm start`
+*Build*
+```
+npm run build
+```
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## File structure
+```
+./src/
+├── assets
+│   ├── images
+│   └── styles
+│       ├── base  
+│       ├── base.scss
+│       ├── icons.scss
+│       └── react-dates
+├── components
+│   ├── FormInputs
+│   │   ├── Checkbox.js
+│   │   ├── Radio.js
+│   │   ├── TextInput.js
+│   │   ├── index.js
+│   │   └── renderField.js
+│   ├── MobileMenu.js
+│   ├── MyBigCalendar
+│   │   ├── Toolbar.js
+│   │   └── index.js
+│   ├── SideBar
+│   │   ├── Nav.js
+│   │   ├── UserInfo.js
+│   │   └── index.js
+│   ├── Switch.js
+│   ├── Tags.js
+│   └── ThemeOptions.js
+├── config
+│   └── configureStore.js
+├── index.js
+├── pages
+│   ├── Calendar
+│   │   └── index.js
+│   ├── Charts
+│   │   ├── Nasdaq.js
+│   │   ├── PerformanceChart.js
+│   │   ├── PublicPreference.js
+│   │   ├── UserBehavior.js
+│   │   └── index.js
+│   ├── Components
+│   │   ├── Buttons
+│   │   │   ├── ButtonGroups.js
+│   │   │   ├── ButtonSizes.js
+│   │   │   ├── ButtonStyles.js
+│   │   │   ├── ButtonsWithLabel.js
+│   │   │   ├── Colors.js
+│   │   │   ├── Pagination.js
+│   │   │   ├── SocialButtons.js
+│   │   │   └── index.js
+│   │   ├── Grid
+│   │   │   ├── GridCollection.js
+│   │   │   ├── Paragraph.js
+│   │   │   └── index.js
+│   │   ├── Icons.js
+│   │   ├── Notifications.js
+│   │   ├── Panels
+│   │   │   ├── AccordionGroup.js
+│   │   │   ├── PageSubcategories.js
+│   │   │   ├── TabGroup.js
+│   │   │   └── index.js
+│   │   ├── SweetAlert.js
+│   │   ├── Typography.js
+│   │   └── index.js
+│   ├── Dashboard
+│   │   ├── EmailChart.js
+│   │   ├── SalesChart.js
+│   │   ├── Tasks.js
+│   │   ├── UserBehaviorChart.js
+│   │   └── index.js
+│   ├── Forms
+│   │   ├── ExtendedForms
+│   │   │   ├── DatePicker.js
+│   │   │   ├── Switches.js
+│   │   │   ├── TagSection.js
+│   │   │   └── index.js
+│   │   ├── RegularForms
+│   │   │   ├── FormElements.js
+│   │   │   ├── HorizontalForm.js
+│   │   │   ├── StackedForm.js
+│   │   │   └── index.js
+│   │   ├── ValidationForms
+│   │   │   └── index.js
+│   │   └── index.js
+│   ├── Icons
+│   │   └── index.js
+│   ├── Main
+│   │   ├── Footer.js
+│   │   ├── Header.js
+│   │   └── index.js
+│   ├── MapsPage
+│   │   ├── GoogleMap.js
+│   │   ├── Map.js
+│   │   ├── VectorMap.js
+│   │   └── index.js
+│   ├── Tables
+│   │   ├── ExtendedTables
+│   │   │   ├── BigTable.js
+│   │   │   ├── TableWithLinks.js
+│   │   │   ├── TableWithSwitch.js
+│   │   │   └── index.js
+│   │   ├── ReactBootstrapTable
+│   │   │   └── index.js
+│   │   ├── RegularTables
+│   │   │   ├── PlainBackgroundTable.js
+│   │   │   ├── StripedTable.js
+│   │   │   └── index.js
+│   │   ├── generateData.js
+│   │   └── index.js
+│   └── UserProfile
+│       ├── ProfileForm.js
+│       ├── UserInfo.js
+│       └── index.js
+├── reducers
+│   ├── Auth.js
+│   ├── Layout.js
+│   ├── ThemeOptions.js
+│   └── index.js
+└── registerServiceWorker.js
+```
+## Author
+David Tran [@davidtranwd](https://twitter.com/davidtranwd)
 
-The page will reload if you make edits. You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes. See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project. Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## License
+Licensed under MIT

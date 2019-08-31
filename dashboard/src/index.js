@@ -1,17 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
-import * as serviceWorker from './serviceWorker';
+import registerServiceWorker from './registerServiceWorker';
+import { HashRouter } from 'react-router-dom';
+import './assets/styles/base.scss';
+import 'sweetalert/dist/sweetalert.css';
+import Main from './pages/Main';
+import configureStore from './config/configureStore';
+import { Provider } from 'react-redux';
 
-import 'react-dropdown/style.css';
-import './style.css';
-import "bootstrap/dist/css/bootstrap.css";
-import '@fortawesome/fontawesome-free/css/all.css';
+const store = configureStore();
+const rootElement = document.getElementById('root');
 
+const renderApp = Component => {
+  ReactDOM.render(
+    <Provider store={store}>
+      <HashRouter>
+        <Component />
+      </HashRouter>
+    </Provider>,
+    rootElement
+  );
+};
 
-ReactDOM.render(<App />, document.getElementById('root'));
+renderApp(Main);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+if (module.hot) {
+  module.hot.accept('./pages/Main', () => {
+    const NextApp = require('./pages/Main').default
+    renderApp(NextApp);
+  });
+}
+
+registerServiceWorker();
+
