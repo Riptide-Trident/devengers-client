@@ -18,7 +18,7 @@ const Header = ({
       </Navbar.Header>
 
       <Navbar.Collapse>
-
+{/* 
         <Nav>
           <NavItem><i className="fa fa-dashboard"></i></NavItem>
           <NavDropdown title={<i className="fa fa-globe" />} id="basic-nav-dropdown">
@@ -28,23 +28,23 @@ const Header = ({
             <MenuItem divider />
             <MenuItem>Separated link</MenuItem>
           </NavDropdown>
-        </Nav>
+        </Nav> */}
         <div className="separator"></div>
-        <Navbar.Form pullLeft>
+        {/* <Navbar.Form pullLeft>
           <FormGroup>
             <span className="input-group-addon"><i className="fa fa-search"></i></span>
             <FormControl type="text" placeholder="Type to search" />
           </FormGroup>
-        </Navbar.Form>
+        </Navbar.Form> */}
         <Nav pullRight>
           <NavItem>Account</NavItem>
-          <NavDropdown title="Dropdown" id="right-nav-bar">
+          {/* <NavDropdown title="Dropdown" id="right-nav-bar">
             <MenuItem>Action</MenuItem>
             <MenuItem>Another action</MenuItem>
             <MenuItem>Something else here</MenuItem>
             <MenuItem divider />
             <MenuItem>Separated link</MenuItem>
-          </NavDropdown>
+          </NavDropdown> */}
           <NavItem>Log out</NavItem>
         </Nav>
       </Navbar.Collapse>

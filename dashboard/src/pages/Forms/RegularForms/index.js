@@ -9,11 +9,11 @@ const RegularForms = () => (
       <div className="col-md-6">
         <StackedForm onSubmit={values => alert('Enter values: ' + JSON.stringify(values, null, 2))} />
       </div>
-      <div className="col-md-6">
+      {/* <div className="col-md-6">
         <HorizontalForm  onSubmit={values => alert('Enter values: ' + JSON.stringify(values, null, 2))} />
-      </div>
+      </div> */}
     </div>
-    <div className="row">
+    {/* <div className="row">
       <div className="col-md-12">
         <FormElements initialValues={{
           radioGroup: 'male',
@@ -24,7 +24,7 @@ const RegularForms = () => (
           radioDisabledOnOff: 'on'
         }} />
       </div>
-    </div>
+    </div> */}
   </div>
 );
 

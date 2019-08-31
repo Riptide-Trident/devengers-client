@@ -27,7 +27,7 @@ const optionsPerformance = {
 const PerformanceChart = () => (
   <div className="card">
     <div className="header">
-      <h4>24 Hours Performance</h4>
+      <h4>Performance of untreated employees</h4>
       <p className="category">Line Chart</p>
     </div>
     <div className="content">

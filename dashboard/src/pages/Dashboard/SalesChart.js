@@ -40,8 +40,8 @@ let responsiveSales = [
 const SalesChart = () => (
   <div className="card">
     <div className="header">
-      <h4 className="title">Users Behavior</h4>
-      <p className="category">24 Hours performance</p>
+      <h4 className="title">Employees Behavior</h4>
+      <p className="category">Monthly performance</p>
     </div>
     <div className="content">
       <ChartistGraph data={dataSales} options={optionsSales} responsiveOptions={responsiveSales} type="Line" className="ct-chart" />
@@ -49,13 +49,13 @@ const SalesChart = () => (
     <div className="footer">
       <div className="legend">
         <div className="item">
-          <i className="fa fa-circle text-info"></i> Open
+          <i className="fa fa-circle text-info"></i> High Performance
         </div>
         <div className="item">
-          <i className="fa fa-circle text-danger"></i> Click
+          <i className="fa fa-circle text-danger"></i> Medium Performance
         </div>
         <div className="item">
-          <i className="fa fa-circle text-warning"></i> Click Second Time
+          <i className="fa fa-circle text-warning"></i> Low Performance
         </div>
       </div>
       <hr />

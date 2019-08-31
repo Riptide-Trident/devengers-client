@@ -26,7 +26,7 @@ const optionsPreferences = {
 const PublicPreference = () => (
   <div className="card">
     <div className="header">
-      <h4>Public Preferences</h4>
+      <h4>Stats based on Gender</h4>
       <p className="category">Pie Chart</p>
     </div>
     <div className="content">
@@ -34,9 +34,9 @@ const PublicPreference = () => (
     </div>
     <div className="footer">
       <h6>Legend</h6>
-      <i className="fa fa-circle text-info"></i> Apple
-      <i className="fa fa-circle text-warning"></i> Samsung
-      <i className="fa fa-circle text-danger"></i> Windows Phone
+      <i className="fa fa-circle text-info"></i> Male
+      <i className="fa fa-circle text-warning"></i> Female
+      <i className="fa fa-circle text-danger"></i> Other Gender
     </div>
   </div>
 );

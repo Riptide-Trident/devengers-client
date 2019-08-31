@@ -31,8 +31,8 @@ let responsiveOptions = [
 const UserBehaviorChart = () => (
   <div className="card ">
     <div className="header">
-      <h4 className="title">2014 Sales</h4>
-      <p className="category">All products including Taxes</p>
+      <h4 className="title">Employees Affected in 2019</h4>
+      <p className="category">Employees didn't consider their treatment</p>
     </div>
     <div className="content">
       <Chart data={data} options={options} responsiveOptions={responsiveOptions} type="Bar" className="ct-chart" />
@@ -41,10 +41,10 @@ const UserBehaviorChart = () => (
     <div className="footer">
       <div className="legend">
         <div className="item">
-          <i className="fa fa-circle text-info"></i> Tesla Model S
+          <i className="fa fa-circle text-info"></i> Total Affected Employees
         </div>
         <div className="item">
-          <i className="fa fa-circle text-danger"></i> BMW 5 Series
+          <i className="fa fa-circle text-danger"></i> Total Employees that didn't go for treatment
         </div>
       </div>
       <hr />
